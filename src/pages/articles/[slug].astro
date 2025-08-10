@@ -3,7 +3,6 @@
 
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, getEntry } from "astro:content";
-import { formatDate } from "../../utils";
 
 // Dynamic route param
 const { slug } = Astro.params;
@@ -15,7 +14,7 @@ if (!entry) {
   return Astro.redirect("/404");
 }
 
-const { Content, data } = await entry.render();
+const { Content } = await entry.render();
 
 // Required to generate static pages
 export async function getStaticPaths() {
@@ -24,11 +23,11 @@ export async function getStaticPaths() {
     params: { slug: post.slug },
   }));
 }
----
 
 <Layout>
   <article>
     <p></p>
     <Content />
   </article>
-</Layout>
+</Layout>;
+---
