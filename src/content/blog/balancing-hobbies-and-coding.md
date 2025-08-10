@@ -1,7 +1,7 @@
 ---
 title: "Balancing Hobbies and Coding: How Hiking and Rock Climbing Help Me Stay Motivated"
 slug: "balancing-hobbies-and-coding"
-publishedAt: "2025-02-18"
+publishedAt: 2025-02-18
 description: "Thoughts on maintaining energy and focus through outdoor activities and exercise."
 ---
 
