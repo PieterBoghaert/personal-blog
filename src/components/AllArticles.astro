@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import BlogArticle from "./BlogArticle.astro";
+
+// Fetch and sort articles by date
+const posts = await getCollection("blog");
+const AllArticles = posts;
+---
+
+<h2>My Articles</h2>
+<p>
+  Below are all my recent blog posts. Click on any title to read the full
+  article.
+</p>
+
+<section class="l-all-articles">
+  {AllArticles.map((article) => <BlogArticle article={article} />)}
+</section>

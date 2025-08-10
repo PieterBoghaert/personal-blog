@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import BlogArticle from "./BlogArticle.astro";
+import { HOMEPAGE_ARTICLE_LIMIT } from "../constants";
+
+// Fetch and sort articles by date
+const posts = await getCollection("blog");
+const LatestArticles = posts
+  .sort(
+    (a, b) =>
+      new Date(b.data.publishedAt).getTime() -
+      new Date(a.data.publishedAt).getTime()
+  )
+  .slice(0, HOMEPAGE_ARTICLE_LIMIT);
+---
+
+<h2>Latest articles</h2>
+
+<section class="l-latest-articles">
+  {LatestArticles.map((article) => <BlogArticle article={article} />)}
+</section>
