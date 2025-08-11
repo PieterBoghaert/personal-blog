@@ -1,0 +1,29 @@
+@layer navigation {
+  .site-header {
+    position: fixed;
+    top: 0;
+    inline-size: 100%;
+    background-color: var(--color-bg);
+    padding-block: var(--spacing-200);
+    z-index: 1000;
+
+    & .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & .site-header__brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    & .site-header__nav ul {
+      display: flex;
+      column-gap: var(--spacing-300);
+      align-items: center;
+      padding-inline: var(--spacing-100);
+      padding-block: var(--spacing-200);
+    }
+  }
+}

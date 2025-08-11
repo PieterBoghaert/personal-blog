@@ -12,5 +12,17 @@
     "@astrojs/vercel": "^8.2.5",
     "astro": "5.12.9"
   },
-  "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90"
+  "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90",
+  "devDependencies": {
+    "@types/postcss-reporter": "^7",
+    "@types/postcss-url": "^10",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.0",
+    "postcss": "^8.5.6",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^2.0.0",
+    "postcss-import": "^16.1.1",
+    "postcss-reporter": "^7.1.0",
+    "postcss-url": "^10.1.3"
+  }
 }

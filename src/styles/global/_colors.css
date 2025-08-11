@@ -1,0 +1,7 @@
+:root {
+  --c-white: oklch(100% 0 0);
+  --c-black: oklch(12.549% 0.045 312.66);
+
+  --color-bg: light-dark(var(--c-white), var(--c-black));
+  --color-text: light-dark(var(--c-black), var(--c-white));
+}
